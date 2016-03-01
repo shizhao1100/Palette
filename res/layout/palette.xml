@@ -1,0 +1,164 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+   <LinearLayout
+       android:id="@+id/R_Layout"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal" >
+        
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="R"
+            android:textSize="20sp"
+/>
+        
+        <SeekBar
+            android:id="@+id/Bar_R"
+            android:layout_gravity="center_vertical"
+             android:gravity="center_vertical"  
+            android:layout_width="0dp"
+            android:layout_weight="12"
+            android:layout_height="fill_parent"
+            android:max="255"
+            android:progress="128" 
+            android:progressDrawable="@drawable/bg_bar"  
+            android:thumb="@drawable/thumb_bar" />
+        
+        <EditText
+            android:id="@+id/Text_R"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="3"
+            android:text="128"
+            android:textSize="20sp"
+            android:inputType="number"
+            android:maxLines="1"
+        	android:maxLength="3"
+       		android:clickable="true"/>
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/G_Layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/R_Layout"
+        android:orientation="horizontal" >
+        
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:text="G"
+            android:textSize="20sp"
+            android:gravity="center" 
+            />
+
+        <SeekBar
+            android:id="@+id/Bar_G"
+            android:layout_gravity="center_vertical"
+             android:layout_width="0dp"
+            android:layout_weight="12"
+            android:layout_height="fill_parent"
+            android:max="255"
+            android:progress="128"
+            android:progressDrawable="@drawable/bg_barg"  
+            android:thumb="@drawable/thumb_barg" 
+            />
+
+        <EditText
+        	android:id="@+id/Text_G"
+        	android:layout_width="0dp"
+        	android:gravity="center"
+            android:layout_weight="3"
+        	android:layout_height="wrap_content"
+        	android:text="128" 
+        	android:textSize="20sp"
+        	android:inputType="number"
+        	android:maxLines="1"
+        	android:maxLength="3"
+        	android:clickable="true"/> 
+        	
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/B_Layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/G_Layout"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:text="B" />
+
+        <SeekBar
+        	android:id="@+id/Bar_B"
+        	android:layout_gravity="center_vertical"
+        	android:layout_width="0dp"
+            android:layout_weight="12"
+        	android:layout_height="fill_parent"
+        	android:max="255"
+        	android:progress="128" 
+        	android:progressDrawable="@drawable/bg_barb"  
+            android:thumb="@drawable/thumb_barb"/>
+        <EditText
+        	android:id="@+id/Text_B"
+        	android:layout_width="0dp"
+            android:layout_weight="3"
+        	android:layout_height="wrap_content"
+        	android:gravity="center"
+        	android:text="128"
+        	android:textSize="20sp" 
+        	android:inputType="number"
+        	android:maxLines="1"
+        	android:maxLength="3"
+        	android:clickable="true"/>
+             
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/Text_RGB"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+ 			android:textSize="30sp" 
+ 			android:maxLines="1"
+ 			android:maxLength="7"
+            android:layout_weight="1"
+            android:text="#808080"
+            android:inputType="number" 
+            android:clickable="true">
+
+            
+        </EditText>
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/viewGroup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/Text_G"
+        android:orientation="vertical" >
+
+    </LinearLayout>
+
+   
+</LinearLayout>
